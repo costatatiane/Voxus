@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <img src="./images/logo_azul.png" alt="Logo Voxus" height="16" width="74.24" class="logo-voxus">
+    <img src="./images/logo_azul.png" alt="Logo Voxus" height="16" width="74.24" class="logo-header">
   </header>
   <main>
     <section id="main-title">
@@ -36,17 +36,17 @@
           <p class="error error-email">Email inválido</p>
         </div>
         <div class="form-inputs">
-          <input required class="form-input" type="text" id="organizationName" name="organizationName" placeholder="Nome da empresa">
-          <label for="organizationName">Nome da empresa</label>
+          <input required class="form-input" type="text" id="organization-name" name="organization-name" placeholder="Nome da empresa">
+          <label for="organization-name">Nome da empresa</label>
           <p class="error error-organization-name"></p>
         </div>
         <div class="form-inputs">
-          <input required class="form-input" type="text" id="organizationSite" name="organizationSite" placeholder="URL do site">
-          <label for="organizationSite">URL do site</label>
+          <input required class="form-input" type="text" id="organization-site" name="organization-site" placeholder="URL do site">
+          <label for="organization-site">URL do site</label>
           <p class="error error-organization-site"></p>
         </div>
         <div class="form-inputs">
-          <select required class="form-input" id="organizationBudget" name="organizationBudget">
+          <select required class="form-input" id="organization-budget" name="organization-budget">
             <option class="form-input" value="">Verba mensal em mídia</option>
             <option class="form-input" value="<= R$5.000"><= R$5.000</option>
             <option class="form-input" value=">= R$5.001 e <= R$30.000">>= R$5.001 e <= R$30.000</option>
@@ -58,7 +58,7 @@
           <p class="error error-organization-budget"></p>
         </div>
         <div class="form-inputs">
-          <button type="button" id="submitButton" onclick="submitForm(VoxusForm)">Experimentar gratuitamente</button>
+          <button type="button" id="submit-button" onclick="submitForm()">Experimentar gratuitamente</button>
         </div>
         <div class="form-inputs submitted" id="submitted">
           <p>Entraremos em contato em 24hs úteis.</p>

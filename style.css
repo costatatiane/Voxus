@@ -31,7 +31,7 @@ header {
 }
 
 header
-  .logo-voxus {
+  .logo-header {
     margin-top: 17px;
     margin-left: 20%;
   }
@@ -309,7 +309,7 @@ footer
 
 @media screen and (max-width: 600px) {
   header
-  .logo-voxus {
+  .logo-header {
     margin-top: 17px;
     margin-left: 10%;
   }
@@ -357,7 +357,7 @@ footer
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
   header
-  .logo-voxus {
+  .logo-header {
     margin-left: 10%;
   }
 

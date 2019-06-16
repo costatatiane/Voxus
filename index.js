@@ -1,12 +1,12 @@
-function submitForm(form) {
+function submitForm() {
 
 	let name = document.getElementById('name');
   let phone = document.getElementById('phone');
   let email = document.getElementById('email');
-  let organizationName = document.getElementById('organizationName');
-  let organizationSite = document.getElementById('organizationSite');
-  let organizationBudget = document.getElementById('organizationBudget');
-  let phoneFilter = /^\\([0-9]{2}\\)((3[0-9]{7})|(9[0-9]{8}))$/i;
+  let organizationName = document.getElementById('organization-name');
+  let organizationSite = document.getElementById('organization-site');
+  let organizationBudget = document.getElementById('organization-budget');
+  let phoneFilter = /^\\([0-9]{2}\\)((3[0-9]{7})|(9[0-9]{8}))$/;
   let emailFilter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
   let siteFilter =  /http:\/\/[A-Za-z0-9\.-]{3,}\.[A-Za-z]{3}/;
 
@@ -83,10 +83,10 @@ function submitForm(form) {
   }
   
   if (count == 0) {
-    if (document.getElementById('submitButton').innerHTML == 'Experimentar gratuitamente') {
-      document.getElementById('submitButton').setAttribute("class", "outline");
-      document.getElementById('submitButton').innerHTML = 'Obrigado!';
-      document.getElementById('submitButton').disabled = true;
+    if (document.getElementById('submit-button').innerHTML == 'Experimentar gratuitamente') {
+      document.getElementById('submit-button').setAttribute("class", "outline");
+      document.getElementById('submit-button').innerHTML = 'Obrigado!';
+      document.getElementById('submit-button').disabled = true;
       document.getElementById('submitted').setAttribute("class", "form-inputs submitted visible");
       document.getElementById('main-trial').setAttribute("class", "visible");
     }
