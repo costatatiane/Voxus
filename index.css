@@ -145,6 +145,19 @@ option[value=""][disabled] {
   display: none;
 }
 
+.error {
+  display: none;
+  width: 225px;
+  margin: 0;
+  padding: 5px;
+
+  font-size: 10px;
+
+  color: white;
+  background: #F0175C;
+  border-radius: 0px 0px 4px 4px;
+}
+
 button {
   width: 250px;
   height: 42px;
