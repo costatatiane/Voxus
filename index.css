@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E5E5E5;
+  font-family: 'Roboto', sans-serif;
+
+  background-image: url("./images/skyline.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.skyline-voxus {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  
+  z-index: -1;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo-voxus {
+  margin-top: 17px;
+  margin-left: 20%;
+}
+
+h1 {
+  margin-top: 60px;
+  width: 580px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.0125em;
+
+  color: #2D3A40;
+}
+
+.subtitle {
+  margin-top: 17px;
+  width: 580px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #748296;
+}
+
+.form-container {
+  width: 620px;
+  height: 597px;
+  margin-top: 73px;
+  padding: 15px 0;
+
+  background: white;
+  box-shadow: 0px 4px 40px rgba(116, 130, 150, 0.2);
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 36px;
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.0125em;
+
+  color: #000000;
+}
+
+.form-inputs {
+  padding: 15px 0;
+}
+
+.form-input {
+  width: 280px;
+  height: 42px;
+  padding: 11px 15px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(116, 130, 150, 0.2);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+label {
+  position: absolute;
+  margin: -54px 8px;
+  padding: 5px;
+
+  font-size: 12px;
+  color: gray;
+  background-color: white;
+  visibility: hidden;
+}
+
+input:focus + label, input:valid + label {
+  visibility: visible;
+}
+
+input:focus {
+  border-color: #326FFF;
+}
+
+select:required:invalid {
+  color: gray;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+button {
+  width: 250px;
+  height: 42px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.0125em;
+  
+  color: #FFFFFF;
+  background: #14E298;
+  border: 0;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #23F7AB;
+}
+
+button.outline {
+  color: #14E298;
+  background: white;
+
+  border: 1px solid #14E298;
+
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+.submitted {
+  display: none;
+}
+
+.submitted.visible {
+  display: flex;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+.submitted > p {
+  display: flex;
+  justify-content: center;
+
+  width: 300px;
+  margin: 0;
+  padding: 0 20px;
+
+  font-size: 14px;
+  line-height: 36px;
+
+  color: #2D3A40;
+  background-color: #F5F7FA;
+  border-radius: 3px;
+}
+
+footer {
+  width: 60%;
+  margin-top: 166px;
+  margin-left: 20%;
+  padding: 21.45px 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.text-footer {
+  margin: 0px 10px;
+  color: #748296;
+}
+
+.logo-footer {
+  margin: 0px 10px;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

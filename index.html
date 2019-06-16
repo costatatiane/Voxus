@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Voxus</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="index.js"></script>
+</head>
+<body>
+  <header>
+    <img src="./images/logo_azul.png" alt="Logo Voxus" height="16" width="74.24" class="logo-voxus">
+  </header>
+  <main>
+    <section id="main-title">
+      <h1>Você está a poucos passos de otimizar suas campanhas!</h1>
+      <p class="subtitle">Queremos conhecer mais sobre sua empresa para melhorar sua experiência com a Voxus.</p>
+    </section>
+    <section id="main-form">
+      <form class="form-container" name="VoxusForm" method="post" action="#" onsubmit="return submitForm(this);">
+        <div class="form-inputs">
+          <input required class="form-input" type="text" id="name" name="name" placeholder="Nome completo">
+          <label for="name">Nome completo</label>
+        </div>
+        <div class="form-inputs">
+          <input required class="form-input" type="tel" id="phone" name="phone" placeholder="Telefone">
+          <label for="phone">Telefone</label>
+        </div>
+        <div class="form-inputs">
+          <input required class="form-input" type="email" id="email" name="email" placeholder="Endereço de e-mail">
+          <label for="email">Endereço de e-mail</label>
+        </div>
+        <div class="form-inputs">
+          <input required class="form-input" type="text" id="organization-name" name="organization-name" placeholder="Nome da empresa">
+          <label for="organization-name">Nome da empresa</label>
+        </div>
+        <div class="form-inputs">
+          <input required class="form-input" type="text" id="organization-site" name="organization-site" placeholder="URL do site">
+          <label for="organization-site">URL do site</label>
+        </div>
+        <div class="form-inputs">
+          <select required class="form-input" id="organization-budget" name="organization-budget">
+            <option value="">Verba mensal em mídia</option>
+            <option value="<= R$5.000"><= R$5.000</option>
+            <option value=">= R$5.001 e <= R$30.000">>= R$5.001 e <= R$30.000</option>
+            <option value=">= R$30.001 e <= R$100.000">>= R$30.001 e <= R$100.000</option>
+            <option value=">= R$100.001 e <= R$500.000">>= R$100.001 e <= R$500.000</option>
+            <option value=">= R$500.001">>= R$500.001</option>
+            <option value="Não se aplica">Não se aplica</option>
+          </select>
+        </div>
+        <div class="form-inputs">
+          <button type="button" id="submitButton" onclick="submitForm(VoxusForm)">Experimentar gratuitamente</button>
+        </div>
+        <div class="form-inputs submitted" id="submitted">
+          <p>Entraremos em contato em 24hs úteis.</p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <img src="./images/logo_cinza.png" alt="Logo Voxus" height="16" width="74.24" class="logo-footer">
+    <p class="text-footer">Termos de serviço</p>
+    <p class="text-footer">Políticas de privacidade</p>
+    <p class="text-footer">Opções de anúncio</p>
+  </footer>
+</body>
+</html>
