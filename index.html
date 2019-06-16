@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Voxus</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script defer src="index.js"></script>
 </head>
@@ -21,19 +21,19 @@
     <section id="main-form">
       <form class="form-container" name="VoxusForm" method="post" action="#">
         <div class="form-inputs">
-          <input required class="form-input" type="text" id="name" name="name" pattern="[A-Za-z]" placeholder="Nome completo">
+          <input required class="form-input" type="text" id="name" name="name" placeholder="Nome completo">
           <label for="name">Nome completo</label>
           <p class="error error-name"></p>
         </div>
         <div class="form-inputs">
-          <input required class="form-input" type="tel" id="phone" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="Telefone">
+          <input required class="form-input" type="tel" id="phone" name="phone"  placeholder="Telefone">
           <label for="phone">Telefone</label>
           <p class="error error-phone"></p>
         </div>
         <div class="form-inputs">
-          <input required class="form-input" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Endereço de e-mail">
+          <input required class="form-input" type="email" id="email" name="email" placeholder="Endereço de e-mail">
           <label for="email">Endereço de e-mail</label>
-          <p class="error error-email"></p>
+          <p class="error error-email">Email inválido</p>
         </div>
         <div class="form-inputs">
           <input required class="form-input" type="text" id="organizationName" name="organizationName" placeholder="Nome da empresa">
@@ -41,20 +41,21 @@
           <p class="error error-organization-name"></p>
         </div>
         <div class="form-inputs">
-          <input required class="form-input" type="text" id="organizationSite" name="organizationSite" pattern="https?://.+" placeholder="URL do site">
+          <input required class="form-input" type="text" id="organizationSite" name="organizationSite" placeholder="URL do site">
           <label for="organizationSite">URL do site</label>
           <p class="error error-organization-site"></p>
         </div>
         <div class="form-inputs">
           <select required class="form-input" id="organizationBudget" name="organizationBudget">
-            <option value="">Verba mensal em mídia</option>
-            <option value="<= R$5.000"><= R$5.000</option>
-            <option value=">= R$5.001 e <= R$30.000">>= R$5.001 e <= R$30.000</option>
-            <option value=">= R$30.001 e <= R$100.000">>= R$30.001 e <= R$100.000</option>
-            <option value=">= R$100.001 e <= R$500.000">>= R$100.001 e <= R$500.000</option>
-            <option value=">= R$500.001">>= R$500.001</option>
-            <option value="Não se aplica">Não se aplica</option>
+            <option class="form-input" value="">Verba mensal em mídia</option>
+            <option class="form-input" value="<= R$5.000"><= R$5.000</option>
+            <option class="form-input" value=">= R$5.001 e <= R$30.000">>= R$5.001 e <= R$30.000</option>
+            <option class="form-input" value=">= R$30.001 e <= R$100.000">>= R$30.001 e <= R$100.000</option>
+            <option class="form-input" value=">= R$100.001 e <= R$500.000">>= R$100.001 e <= R$500.000</option>
+            <option class="form-input" value=">= R$500.001">>= R$500.001</option>
+            <option class="form-input" value="Não se aplica">Não se aplica</option>
           </select>
+          <p class="error error-organization-budget"></p>
         </div>
         <div class="form-inputs">
           <button type="button" id="submitButton" onclick="submitForm(VoxusForm)">Experimentar gratuitamente</button>
@@ -63,6 +64,12 @@
           <p>Entraremos em contato em 24hs úteis.</p>
         </div>
       </form>
+    </section>
+    <section id="main-trial">
+      <p>
+        <span>*Para usar o trial grátis você precisa ser um e-commerce e concordar com os termos e requisitos do trial gratuito. Saiba mais em: </span>
+        <a href="" target="_blank">Termos e requisitos de trial gratuito</a>
+      </p>
     </section>
   </main>
   <footer>
